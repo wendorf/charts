@@ -283,7 +283,7 @@ spec:
               valueFrom:
                   secretKeyRef:
                     name: {{ template "concourse.concourse.fullname" . }}
-                  key: oauth-auth-client-id
+                    key: oauth-auth-client-id
             - name: CONCOURSE_OAUTH_CLIENT_SECRET
               valueFrom:
                 secretKeyRef:
